@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+    <header>
+        <title>Contatti</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script/contatti.js"></script>
+        <link rel="stylesheet" href="style/contatti.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap&family=Open+Sans:wght@300&display=swap?&family=Inconsolata&display=swap&family=Comfortaa:wght@300&family=Inconsolata&family=JetBrains+Mono:wght@200;300&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    </header>
+    <body>
+        <a href="./index.html"><h1 class="indietro1">❯</h1><h1 class="indetro2" href="index.html">indietro</h1></a>
+        <div class="parteSopra">
+            <h3 class="scritteSopra"><div class="div0" id="div0"></div><a id="a1" class="a1">1.</a><a id="a11" class="a11">Domanda</a><a id="a2" class="a2">2.</a><a id="a22" class="a22">Contatto</a><a id="a3" class="a3">3.</a><a id="a33" class="a33">Fine</a></h3>
+        </div>
+        <div class="formMask">
+            <div class="serieForm" id="serieForm">
+                <form action="/database/contatti.php">
+                    <div class="form1">
+                        <input class="input_nome" placeholder="Inserisci il tuo nome" min="3" max="20" name="contatti_nome">
+                        <textarea class="input_domanda" placeholder="Dimmi tutto" min="3" maxlength="220" name="contatti_domanda" row="5"></textarea>
+                        <input class="input_invio1" type="button" onclick="avanti1()" value="Avanti ❯">
+                        <h3 href="/FAQ/FAQ.html" class="FAQ1">FAQ</h3>
+                    </div>
+                    <div class="form2">
+                        <input class="input_email" placeholder="Inserisci la tua email per contattarti" min="3" max="20" name="contatti_email" type="email">
+                        <input class="input_invio2" type="button" onclick="avanti2()" value="Avanti ❯">
+                        <button type="button" onclick="indietro1()" class="input_indietro2"><a class="indietro3">❯</a> &nbsp&nbsp&nbsp Indietro</button>
+                    </div>
+                    <div class="form3">
+                        <h1>Finito!</h1>      
+                        <h2>Ti risponderò il prima possibile</h2>
+                        <input class="input_invio3" type="submit" value="Fine ❯">
+                        <button type="button" onclick="indietro2()" class="input_indietro1"><a class="indietro3">❯</a> &nbsp&nbsp&nbsp Indietro</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
